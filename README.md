@@ -1,4 +1,3 @@
-24_Powersupply_project
 # Project Modular lab powersupply
 Arne Van den Broeck
 
