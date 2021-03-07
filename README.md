@@ -5,6 +5,11 @@ Arne Van den Broeck
 ## Desciption
 A Modular lab bench powersupply 
 
+every module will:
+* use the eurocard format
+* connected via a 40 ribbon cable as a bus
+* its own isolated powersupply 
+
 currently there will Two modules
 Powermodule:
 * 0-30V
@@ -25,6 +30,7 @@ In the future im Hoping to build:
 * Waveform generator
 * Multimeter
 * GPIO
+
 
 
 
