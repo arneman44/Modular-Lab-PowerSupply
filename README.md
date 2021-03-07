@@ -21,11 +21,11 @@ A Modular lab bench powersupply
 * Dual powerbus for connecting modules internally
 
 
-### control board:
+### controller:
 * 7inch touchscreen
 * Ethernet
 * USB host/device
-* Encoder
+* rotary Encoder
  
  
 ## Future modules:
