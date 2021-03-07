@@ -29,12 +29,18 @@ A Modular lab bench powersupply
 * Encoder
  
  
-### Future modules:
+## Future modules:
 * DC load
 * Waveform generator
 * Multimeter
 * GPIO
 
+## Files 
+All the Kicad files where made using the nightly build of kicad
+Version: (5.99.0-9544-g366189b864)
+
+The STM32 project are build with cubeMX with as toolchain makefile.
+I use vscode with STM32-for-vscode to build it
 
 
 
