@@ -5,15 +5,16 @@ Arne Van den Broeck
 ## Desciption
 A Modular lab bench powersupply 
 
-every module will:
+### Specs Modules:
 * use the eurocard format
-* connected via a 40 ribbon cable as a bus
+* connected via a 40 ribbon cable as a bus 
 * its own isolated powersupply 
 
-currently there will Two modules
 
 
-Powermodule:
+## Modules:
+
+### Powermodule:
 * 0-30V
 * 0-3A
 * 16bit readout
@@ -21,14 +22,14 @@ Powermodule:
 * Dual powerbus for connecting modules internally
 
 
-control board:
+### control board:
 * 7inch touchscreen
 * Ethernet
 * USB host/device
 * Encoder
  
  
-In the future im Hoping to build:
+### Future modules:
 * DC load
 * Waveform generator
 * Multimeter
