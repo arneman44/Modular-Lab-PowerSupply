@@ -11,6 +11,8 @@ every module will:
 * its own isolated powersupply 
 
 currently there will Two modules
+
+
 Powermodule:
 * 0-30V
 * 0-3A
@@ -24,6 +26,7 @@ control board:
 * Ethernet
 * USB host/device
 * Encoder
+ 
  
 In the future im Hoping to build:
 * DC load
