@@ -67,13 +67,13 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "STM32_LCD.kicad_prl",
+    "filename": "Controller.kicad_prl",
     "version": 3
   },
   "project": {
     "files": [
       {
-        "name": "STM32_LCD.kicad_sch",
+        "name": "Controller.kicad_sch",
         "open": false,
         "window": {
           "display": 0,

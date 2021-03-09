@@ -327,7 +327,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "STM32_LCD.kicad_pro",
+    "filename": "Controller.kicad_pro",
     "version": 1
   },
   "net_settings": {
