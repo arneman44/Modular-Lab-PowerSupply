@@ -73,15 +73,15 @@
   "project": {
     "files": [
       {
-        "name": "PowerBoard 1.kicad_sch",
+        "name": "PowerBoard 1.kicad_pcb",
         "open": false,
         "window": {
-          "display": 0,
+          "display": 4,
           "maximized": true,
-          "pos_x": -8,
-          "pos_y": -8,
-          "size_x": 1936,
-          "size_y": 1176
+          "pos_x": 140,
+          "pos_y": -908,
+          "size_x": 1616,
+          "size_y": 876
         }
       }
     ]

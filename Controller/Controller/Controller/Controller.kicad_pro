@@ -48,8 +48,33 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "items_not_allowed|68060000|100860000|0511e4ab-b984-408f-9b92-a56477e2e5af|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|68060000|103400000|f34a506f-523a-43eb-8840-e653d2523274|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|68060000|105940000|04224025-abc5-466a-8ac6-154cd476193f|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|68060000|108480000|c1c3091c-2135-4ea5-bcfb-318af51a706c|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|68060000|111020000|9bdd293b-64f3-4a1b-a58d-d5f30c08cd31|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|68060000|113560000|d940e8f8-842b-4451-a451-87bfaa4c102b|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|68060000|93240000|76359547-a7be-4d6e-aebf-65f6316e95bd|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|68060000|95780000|347323c1-2cc8-4583-ad06-436f5ca062c5|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|68060000|98320000|e9d8d729-789a-45ca-8fbd-06fb6578ec64|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|100860000|527af00c-ea82-4a67-aa79-0d9732eebcd0|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|103400000|2b957ae1-8fd8-485d-8164-4ac53d91ab1f|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|105940000|fd7a66f3-09eb-4b15-9d03-e8e3ab8ca078|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|108480000|3bfc0f8c-e606-47d2-b08f-4c48b2c3c7e4|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|111020000|d5bc0f0c-bf9a-4434-af13-78659bee26c1|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|113560000|a53a6d69-c352-4f22-a294-f8743e181ad0|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|93240000|9ff256fe-3722-4037-998e-5c0f13988e08|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|95780000|62297f9b-cc0a-4679-b806-e8f42b93b6bf|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|70600000|98320000|d9d51823-0740-4122-8939-293b5a9146ea|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -107,9 +132,33 @@
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997
       },
-      "track_widths": [],
-      "via_dimensions": [],
-      "zones_allow_external_fillets": false,
+      "track_widths": [
+        0.0,
+        0.2,
+        0.25,
+        0.3,
+        0.5,
+        1.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.8
+        },
+        {
+          "diameter": 1.6,
+          "drill": 0.9
+        }
+      ],
+      "zones_allow_external_fillets": true,
       "zones_use_no_outline": true
     },
     "layer_presets": []
@@ -345,6 +394,35 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 6.0,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.3,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "50Ohm",
+        "nets": [
+          "RMII_CRS_DV",
+          "RMII_MDC",
+          "RMII_MDIO",
+          "RMII_REF_CLK",
+          "RMII_RXD+",
+          "RMII_RXD-",
+          "RMII_RXER",
+          "RMII_TXD+",
+          "RMII_TXD-",
+          "RMII_TXEN"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
