@@ -76,12 +76,24 @@
         "name": "PowerBoard 1.kicad_pcb",
         "open": false,
         "window": {
-          "display": 4,
+          "display": 0,
           "maximized": true,
           "pos_x": 140,
-          "pos_y": -908,
-          "size_x": 1616,
-          "size_y": 876
+          "pos_y": 0,
+          "size_x": 1600,
+          "size_y": 794
+        }
+      },
+      {
+        "name": "PowerBoard 1.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -8,
+          "pos_y": -8,
+          "size_x": 1936,
+          "size_y": 1176
         }
       }
     ]
