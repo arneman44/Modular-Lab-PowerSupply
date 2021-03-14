@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 44,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -63,14 +63,27 @@
       35,
       36
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "ffff7ff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "LCDboard Front.kicad_prl",
+    "filename": "Controller Front.kicad_prl",
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "Controller Front.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -8,
+          "pos_y": 0,
+          "size_x": 1936,
+          "size_y": 1176
+        }
+      }
+    ]
   }
 }
