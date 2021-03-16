@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_nets": [],
@@ -15,7 +15,7 @@
     "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
-      "footprints": true,
+      "footprints": false,
       "graphics": true,
       "keepouts": true,
       "lockedItems": true,
@@ -79,7 +79,7 @@
           "display": 0,
           "maximized": true,
           "pos_x": -8,
-          "pos_y": -8,
+          "pos_y": 0,
           "size_x": 1936,
           "size_y": 1176
         }
@@ -88,12 +88,12 @@
         "name": "Controller.kicad_sch",
         "open": false,
         "window": {
-          "display": 4,
+          "display": 2,
           "maximized": true,
-          "pos_x": 140,
-          "pos_y": -908,
-          "size_x": 1616,
-          "size_y": 876
+          "pos_x": -1208,
+          "pos_y": -378,
+          "size_x": 1216,
+          "size_y": 1896
         }
       }
     ]
