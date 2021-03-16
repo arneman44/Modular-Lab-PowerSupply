@@ -1,0 +1,2141 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 33,
+              "Green": 35,
+              "Blue": 41
+            },
+            "Alpha": 255,
+            "Name": "Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 1024,
+            "Height": 600,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "Sidebar",
+            "Type": "CustomContainerInstance",
+            "Name": "sidebar",
+            "X": 0,
+            "Y": 0,
+            "Width": 100,
+            "Height": 600,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "HalfVert",
+            "Type": "CustomContainerInstance",
+            "Name": "powerFullsize1",
+            "X": 121,
+            "Y": 20,
+            "Width": 432,
+            "Height": 560,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "HalfVert",
+            "Type": "CustomContainerInstance",
+            "Name": "powerFullsize1_1",
+            "X": 570,
+            "Y": 20,
+            "Width": 432,
+            "Height": 560,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "Screen3",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 15360
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 33,
+              "Green": 35,
+              "Blue": 41
+            },
+            "Alpha": 255,
+            "Name": "Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 1024,
+            "Height": 600,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "Sidebar",
+            "Type": "CustomContainerInstance",
+            "Name": "sidebar",
+            "X": 0,
+            "Y": 0,
+            "Width": 100,
+            "Height": 600,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "OneForth",
+            "Type": "CustomContainerInstance",
+            "Name": "oneForth1",
+            "X": 120,
+            "Y": 20,
+            "Width": 432,
+            "Height": 270,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "OneForth",
+            "Type": "CustomContainerInstance",
+            "Name": "oneForth1_2",
+            "X": 570,
+            "Y": 310,
+            "Width": 432,
+            "Height": 270,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "OneForth",
+            "Type": "CustomContainerInstance",
+            "Name": "oneForth1_3",
+            "X": 570,
+            "Y": 20,
+            "Width": 432,
+            "Height": 270,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "OneForth",
+            "Type": "CustomContainerInstance",
+            "Name": "oneForth1_1",
+            "X": 120,
+            "Y": 310,
+            "Width": 432,
+            "Height": 270,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "Screen4",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 15360
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 33,
+              "Green": 35,
+              "Blue": 41
+            },
+            "Alpha": 255,
+            "Name": "Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 1024,
+            "Height": 600,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "Sidebar",
+            "Type": "CustomContainerInstance",
+            "Name": "sidebar",
+            "X": 0,
+            "Y": 0,
+            "Width": 100,
+            "Height": 600,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Style": "Uninitialized",
+                "IconReleased": "",
+                "IconPressed": ""
+              },
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 160,
+                "TextId": "SingleUseId24",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 432,
+                "Height": 270,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 75,
+                  "Green": 76,
+                  "Blue": 85
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButton1",
+            "X": 564,
+            "Y": 0,
+            "Width": 432,
+            "Height": 270,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "LayoutSelection",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 75,
+              "Green": 76,
+              "Blue": 85
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 100,
+            "Height": 600,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "TouchButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 26,
+                "Y": 26,
+                "IconReleased": "home-variant-outline-white.png",
+                "IconPressed": "home-variant-outline-black.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 100,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 75,
+                  "Green": 76,
+                  "Blue": 85
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "HomeButton",
+            "X": 0,
+            "Y": 0,
+            "Width": 100,
+            "Height": 100,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 26,
+                "Y": 26,
+                "IconReleased": "transit-connection-horizontal-white.png",
+                "IconPressed": "transit-connection-horizontal-balck.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 100,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 75,
+                  "Green": 76,
+                  "Blue": 85
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "BusSettings",
+            "X": 0,
+            "Y": 200,
+            "Width": 100,
+            "Height": 100,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 26,
+                "Y": 26,
+                "IconReleased": "view-quilt-outline-white.png",
+                "IconPressed": "view-quilt-outline-black.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 100,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 75,
+                  "Green": 76,
+                  "Blue": 85
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "LayoutButton",
+            "X": 0,
+            "Y": 100,
+            "Width": 100,
+            "Height": 100,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 100,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 75,
+                  "Green": 76,
+                  "Blue": 85
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButton2_3",
+            "X": 0,
+            "Y": 300,
+            "Width": 100,
+            "Height": 100,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 26,
+                "Y": 26,
+                "IconReleased": "cog-outline-white.png",
+                "IconPressed": "cog-outline-black.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 100,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 75,
+                  "Green": 76,
+                  "Blue": 85
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "Settings",
+            "X": 0,
+            "Y": 500,
+            "Width": 100,
+            "Height": 100,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 100,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 75,
+                  "Green": 76,
+                  "Blue": 85
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButton2_5",
+            "X": 0,
+            "Y": 400,
+            "Width": 100,
+            "Height": 100,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "HomeButton"
+            },
+            "Action": {
+              "Type": "ActionNone"
+            }
+          }
+        ],
+        "Name": "Sidebar",
+        "X": 0,
+        "Y": 0,
+        "Width": 100,
+        "Height": 600
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 75,
+              "Green": 76,
+              "Blue": 85
+            },
+            "Alpha": 255,
+            "Name": "Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 884,
+            "Height": 560,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "VoltageReadBack",
+            "X": 10,
+            "Y": 10,
+            "Width": 280,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "PowerReadPrimBack",
+            "X": 10,
+            "Y": 290,
+            "Width": 280,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "VoltageSetBack",
+            "X": 300,
+            "Y": 10,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "AmprageSetBack",
+            "X": 300,
+            "Y": 290,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "PowerReadSecBack",
+            "X": 300,
+            "Y": 334,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId2",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "VoltageRead",
+            "X": 10,
+            "Y": 10,
+            "Width": 280,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId13",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "PowerReadPrim",
+            "X": 10,
+            "Y": 290,
+            "Width": 280,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -1186200271,
+            "NumberOfValues": 201,
+            "MaxY": 20.0,
+            "MinY": 0.0,
+            "Precision": "0.01",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 200,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphScroll",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 0,
+                "Green": 0,
+                "Blue": 0
+              },
+              "Interval": 20.0,
+              "LineWidth": 1,
+              "Alpha": 100
+            },
+            "MinorXAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 0,
+                "Green": 0,
+                "Blue": 0
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 20
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 0,
+                "Green": 0,
+                "Blue": 0
+              },
+              "Interval": 20.0,
+              "LineWidth": 1,
+              "Alpha": 100
+            },
+            "MinorYAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 0,
+                "Green": 0,
+                "Blue": 0
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 20
+            },
+            "Name": "VoltageGraph",
+            "X": 10,
+            "Y": 102,
+            "Width": 412,
+            "Height": 167,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -1186200271,
+            "NumberOfValues": 201,
+            "MaxY": 20.0,
+            "MinY": 0.0,
+            "Precision": "0.01",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 200,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphScroll",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                },
+                "Alpha": 255
+              },
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 187,
+                  "Green": 25,
+                  "Blue": 199
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 0,
+                "Green": 0,
+                "Blue": 0
+              },
+              "Interval": 20.0,
+              "LineWidth": 1,
+              "Alpha": 100
+            },
+            "MinorXAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 0,
+                "Green": 0,
+                "Blue": 0
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 20
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 0,
+                "Green": 0,
+                "Blue": 0
+              },
+              "Interval": 20.0,
+              "LineWidth": 1,
+              "Alpha": 100
+            },
+            "MinorYAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 0,
+                "Green": 0,
+                "Blue": 0
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 20
+            },
+            "Name": "PowerGraph",
+            "X": 10,
+            "Y": 382,
+            "Width": 412,
+            "Height": 167,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId6",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId7",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "VoltageSet",
+            "X": 300,
+            "Y": 10,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": true,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId12",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "AmprageSet",
+            "X": 300,
+            "Y": 290,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId10",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId11",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "PowerReadSec",
+            "X": 300,
+            "Y": 334,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 122,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "VoltageSetClick",
+            "X": 300,
+            "Y": 10,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 122,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "PowerReadSecClick",
+            "X": 300,
+            "Y": 334,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 122,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "AmprageSetClick",
+            "X": 300,
+            "Y": 290,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 16,
+                "Y": 6,
+                "IconReleased": "cog-outline-small-white.png",
+                "IconPressed": "cog-outline-small-black.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 56,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 56,
+                  "Green": 56,
+                  "Blue": 56
+                },
+                "ColorPressed": {
+                  "Red": 56,
+                  "Green": 56,
+                  "Blue": 56
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "Settings",
+            "X": 300,
+            "Y": 54,
+            "Width": 56,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ToggleButtonTrigger",
+              "InitalStatePressed": false
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 16,
+                "Y": 6,
+                "IconReleased": "power-small-white.png",
+                "IconPressed": "power-small-black.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 56,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 56,
+                  "Green": 56,
+                  "Blue": 56
+                },
+                "ColorPressed": {
+                  "Red": 56,
+                  "Green": 56,
+                  "Blue": 56
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "Settings_1",
+            "X": 366,
+            "Y": 54,
+            "Width": 56,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionNone"
+            }
+          }
+        ],
+        "Name": "HalfVert",
+        "X": 120,
+        "Y": 20,
+        "Width": 432,
+        "Height": 560
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 75,
+              "Green": 76,
+              "Blue": 85
+            },
+            "Alpha": 255,
+            "Name": "Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 432,
+            "Height": 270,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "VoltageReadBack",
+            "X": 10,
+            "Y": 10,
+            "Width": 280,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "VoltageSetBack",
+            "X": 300,
+            "Y": 10,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId14",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId15",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "VoltageRead",
+            "X": 10,
+            "Y": 10,
+            "Width": 280,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId16",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId17",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "VoltageSet",
+            "X": 300,
+            "Y": 10,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": true,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 122,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "VoltageSetClick",
+            "X": 300,
+            "Y": 10,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 16,
+                "Y": 6,
+                "IconReleased": "cog-outline-small-white.png",
+                "IconPressed": "cog-outline-small-black.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 56,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 56,
+                  "Green": 56,
+                  "Blue": 56
+                },
+                "ColorPressed": {
+                  "Red": 56,
+                  "Green": 56,
+                  "Blue": 56
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "Settings",
+            "X": 300,
+            "Y": 55,
+            "Width": 56,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ToggleButtonTrigger",
+              "InitalStatePressed": false
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 16,
+                "Y": 6,
+                "IconReleased": "power-small-white.png",
+                "IconPressed": "power-small-black.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 56,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 56,
+                  "Green": 56,
+                  "Blue": 56
+                },
+                "ColorPressed": {
+                  "Red": 56,
+                  "Green": 56,
+                  "Blue": 56
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "Settings_1",
+            "X": 366,
+            "Y": 55,
+            "Width": 56,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "PowerReadPrimBack",
+            "X": 10,
+            "Y": 100,
+            "Width": 280,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "AmprageSetBack",
+            "X": 300,
+            "Y": 100,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 56,
+              "Green": 56,
+              "Blue": 56
+            },
+            "Alpha": 255,
+            "Name": "PowerReadSecBack",
+            "X": 300,
+            "Y": 144,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId18",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId19",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "PowerReadPrim",
+            "X": 10,
+            "Y": 100,
+            "Width": 280,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId20",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId21",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "AmprageSet",
+            "X": 300,
+            "Y": 100,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId22",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId23",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "PowerReadSec",
+            "X": 300,
+            "Y": 144,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 122,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "PowerReadSecClick",
+            "X": 300,
+            "Y": 143,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 122,
+                "Height": 37,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "AmprageSetClick",
+            "X": 300,
+            "Y": 100,
+            "Width": 122,
+            "Height": 37,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": 426369392,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 99,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                },
+                "Alpha": 255
+              }
+            ],
+            "Name": "dynamicGraph1",
+            "X": 10,
+            "Y": 190,
+            "Width": 412,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "OneForth",
+        "X": 0,
+        "Y": 0,
+        "Width": 432,
+        "Height": 270
+      },
+      {
+        "Components": [],
+        "Interactions": [],
+        "Name": "New",
+        "X": 0,
+        "Y": 0,
+        "Width": 250,
+        "Height": 250
+      }
+    ],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId6",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId10",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId11",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId12",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId13",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      }
+    ],
+    "Name": "Powersupply",
+    "Resolution": {
+      "Width": 1024,
+      "Height": 600
+    },
+    "SelectedColorDepth": 8,
+    "StartupScreenName": "Screen3",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplateName": "Simulator",
+    "ApplicationTemplateVersion": "2.0.0",
+    "ApplicationTemplateDescription": "Simulator Application Template",
+    "AvailableColorDepths": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      24
+    ],
+    "AvailableLCDs": {
+      "1": "LCD1bpp",
+      "2": "LCD2bpp",
+      "4": "LCD4bpp",
+      "8": "LCD8bpp_ARGB2222",
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD8bpp_ARGB2222": {
+        "Id": "LCD8bpp_ARGB",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "",
+    "FlashTargetCommand": "",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape"
+  },
+  "Version": "4.15.0",
+  "CreatedBy": "4.15.0"
+}
