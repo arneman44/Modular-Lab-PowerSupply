@@ -159,7 +159,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Controller Front.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

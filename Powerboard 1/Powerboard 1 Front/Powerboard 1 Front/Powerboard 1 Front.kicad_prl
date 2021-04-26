@@ -71,19 +71,6 @@
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "Powerboard 1 Front.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 1,
-          "maximized": true,
-          "pos_x": 1912,
-          "pos_y": 4,
-          "size_x": 1936,
-          "size_y": 1176
-        }
-      }
-    ]
+    "files": []
   }
 }

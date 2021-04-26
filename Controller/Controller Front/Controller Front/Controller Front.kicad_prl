@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 50,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -71,6 +71,19 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "Controller Front.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 4,
+          "maximized": true,
+          "pos_x": 175,
+          "pos_y": -908,
+          "size_x": 1616,
+          "size_y": 876
+        }
+      }
+    ]
   }
 }

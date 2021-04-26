@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 37,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_nets": [],
@@ -15,7 +15,7 @@
     "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
-      "footprints": false,
+      "footprints": true,
       "graphics": true,
       "keepouts": true,
       "lockedItems": true,
@@ -63,7 +63,7 @@
       35,
       36
     ],
-    "visible_layers": "7fdf6fd_80000007",
+    "visible_layers": "7fdf6fd_00000006",
     "zone_display_mode": 0
   },
   "meta": {
@@ -73,27 +73,27 @@
   "project": {
     "files": [
       {
-        "name": "Controller.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": -8,
-          "pos_y": 0,
-          "size_x": 1936,
-          "size_y": 1176
-        }
-      },
-      {
         "name": "Controller.kicad_sch",
         "open": false,
         "window": {
-          "display": 2,
+          "display": 0,
+          "maximized": false,
+          "pos_x": 434,
+          "pos_y": 154,
+          "size_x": 1008,
+          "size_y": 872
+        }
+      },
+      {
+        "name": "Controller.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 4,
           "maximized": true,
-          "pos_x": -1208,
-          "pos_y": -378,
-          "size_x": 1216,
-          "size_y": 1896
+          "pos_x": 175,
+          "pos_y": -908,
+          "size_x": 1616,
+          "size_y": 876
         }
       }
     ]
