@@ -1,0 +1,11 @@
+{
+    "cortex-debug.armToolchainPath": "C:\\PROGRAM FILES (X86)\\GNU ARM EMBEDDED TOOLCHAIN\\10 2020-Q4-MAJOR\\BIN",
+    "cortex-debug.openocdPath": "C:\\OPENOCD\\BIN\\OPENOCD.EXE",
+    "files.associations": {
+        "main.h": "c",
+        "stm32f7xx_hal.h": "c",
+        "stm32f7xx_hal_conf.h": "c",
+        "stm32f7xx_hal_i2c.h": "c",
+        "touchgfx.h": "c"
+    }
+}
