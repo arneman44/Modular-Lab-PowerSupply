@@ -423,7 +423,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../Docs/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -431,8 +431,28 @@
   },
   "sheets": [
     [
-      "1285d2e4-c018-4057-9e05-a462993d9a32",
+      "2943786e-5d58-43a0-bc27-a533e4e2b2d0",
       ""
+    ],
+    [
+      "2943786e-5d58-43a0-bc27-a533e4e2b2d0",
+      "Feedback"
+    ],
+    [
+      "86be3539-e780-41ea-bc47-dbbded14bc10",
+      "Bussconnector + isolation"
+    ],
+    [
+      "e1214fbb-980c-4cd7-9f54-10d3286d3132",
+      "Buck converters"
+    ],
+    [
+      "2a55fcf8-5cb1-4e1a-bd3e-d6358c2317fd",
+      "PowerMatrix"
+    ],
+    [
+      "ec14560d-aa41-41f2-b561-238cf31b3728",
+      "TempSens"
     ]
   ],
   "text_variables": {}

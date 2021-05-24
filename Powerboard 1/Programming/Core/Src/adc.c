@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * File Name          : ADC.c
-  * Description        : This file provides code for the configuration
-  *                      of the ADC instances.
+  * @file    adc.c
+  * @brief   This file provides code for the configuration
+  *          of the ADC instances.
   ******************************************************************************
   * @attention
   *
@@ -30,9 +30,17 @@ ADC_HandleTypeDef hadc2;
 /* ADC1 init function */
 void MX_ADC1_Init(void)
 {
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
   ADC_MultiModeTypeDef multimode = {0};
   ADC_ChannelConfTypeDef sConfig = {0};
 
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
   /** Common config
   */
   hadc1.Instance = ADC1;
@@ -72,13 +80,24 @@ void MX_ADC1_Init(void)
   {
     Error_Handler();
   }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
 
 }
 /* ADC2 init function */
 void MX_ADC2_Init(void)
 {
+
+  /* USER CODE BEGIN ADC2_Init 0 */
+
+  /* USER CODE END ADC2_Init 0 */
+
   ADC_ChannelConfTypeDef sConfig = {0};
 
+  /* USER CODE BEGIN ADC2_Init 1 */
+
+  /* USER CODE END ADC2_Init 1 */
   /** Common config
   */
   hadc2.Instance = ADC2;
@@ -111,6 +130,9 @@ void MX_ADC2_Init(void)
   {
     Error_Handler();
   }
+  /* USER CODE BEGIN ADC2_Init 2 */
+
+  /* USER CODE END ADC2_Init 2 */
 
 }
 
@@ -132,24 +154,16 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     }
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
-    __HAL_RCC_GPIOB_CLK_ENABLE();
     /**ADC1 GPIO Configuration
     PA0     ------> ADC1_IN1
     PA1     ------> ADC1_IN2
     PA2     ------> ADC1_IN3
     PA3     ------> ADC1_IN4
-    PB0     ------> ADC1_IN11
-    PB1     ------> ADC1_IN12
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3;
+    GPIO_InitStruct.Pin = VOUT_ADC_Pin|VOUT_ADCA1_Pin|TEMP1_Pin|TEMP2_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1;
-    GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN ADC1_MspInit 1 */
 
@@ -165,16 +179,6 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     if(HAL_RCC_ADC12_CLK_ENABLED==1){
       __HAL_RCC_ADC12_CLK_ENABLE();
     }
-
-    __HAL_RCC_GPIOA_CLK_ENABLE();
-    /**ADC2 GPIO Configuration
-    PA4     ------> ADC2_IN1
-    */
-    GPIO_InitStruct.Pin = GPIO_PIN_4;
-    GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
   /* USER CODE BEGIN ADC2_MspInit 1 */
 
   /* USER CODE END ADC2_MspInit 1 */
@@ -200,12 +204,8 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     PA1     ------> ADC1_IN2
     PA2     ------> ADC1_IN3
     PA3     ------> ADC1_IN4
-    PB0     ------> ADC1_IN11
-    PB1     ------> ADC1_IN12
     */
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3);
-
-    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_0|GPIO_PIN_1);
+    HAL_GPIO_DeInit(GPIOA, VOUT_ADC_Pin|VOUT_ADCA1_Pin|TEMP1_Pin|TEMP2_Pin);
 
   /* USER CODE BEGIN ADC1_MspDeInit 1 */
 
@@ -221,12 +221,6 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     if(HAL_RCC_ADC12_CLK_ENABLED==0){
       __HAL_RCC_ADC12_CLK_DISABLE();
     }
-
-    /**ADC2 GPIO Configuration
-    PA4     ------> ADC2_IN1
-    */
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_4);
-
   /* USER CODE BEGIN ADC2_MspDeInit 1 */
 
   /* USER CODE END ADC2_MspDeInit 1 */

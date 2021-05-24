@@ -124,7 +124,10 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  gui/include/gui/screen4_screen/Screen4Presenter.hpp \
  gui/include/gui/containers/OneForth.hpp \
  generated/gui_generated/include/gui_generated/containers/OneForthBase.hpp \
- touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp
+ touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
+ gui/include/gui/layoutselection_screen/LayoutSelectionView.hpp \
+ generated/gui_generated/include/gui_generated/layoutselection_screen/LayoutSelectionViewBase.hpp \
+ gui/include/gui/layoutselection_screen/LayoutSelectionPresenter.hpp
 
 generated/simulator/include/simulator/mainBase.hpp:
 
@@ -375,3 +378,9 @@ gui/include/gui/containers/OneForth.hpp:
 generated/gui_generated/include/gui_generated/containers/OneForthBase.hpp:
 
 touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
+
+gui/include/gui/layoutselection_screen/LayoutSelectionView.hpp:
+
+generated/gui_generated/include/gui_generated/layoutselection_screen/LayoutSelectionViewBase.hpp:
+
+gui/include/gui/layoutselection_screen/LayoutSelectionPresenter.hpp:

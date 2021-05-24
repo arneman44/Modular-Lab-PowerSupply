@@ -71,6 +71,8 @@ void HAL_MspInit(void)
   __HAL_RCC_SYSCFG_CLK_ENABLE();
 
   /* System interrupt init*/
+  /* PendSV_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(PendSV_IRQn, 15, 0);
 
   /* USER CODE BEGIN MspInit 1 */
 
@@ -198,6 +200,38 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
 
   /* USER CODE END I2C3_MspInit 1 */
   }
+  else if(hi2c->Instance==I2C4)
+  {
+  /* USER CODE BEGIN I2C4_MspInit 0 */
+
+  /* USER CODE END I2C4_MspInit 0 */
+
+    __HAL_RCC_GPIOH_CLK_ENABLE();
+    __HAL_RCC_GPIOD_CLK_ENABLE();
+    /**I2C4 GPIO Configuration
+    PH12     ------> I2C4_SDA
+    PD12     ------> I2C4_SCL
+    */
+    GPIO_InitStruct.Pin = GPIO_PIN_12;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF4_I2C4;
+    HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = GPIO_PIN_12;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF4_I2C4;
+    HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+
+    /* Peripheral clock enable */
+    __HAL_RCC_I2C4_CLK_ENABLE();
+  /* USER CODE BEGIN I2C4_MspInit 1 */
+
+  /* USER CODE END I2C4_MspInit 1 */
+  }
 
 }
 
@@ -228,6 +262,26 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
   /* USER CODE BEGIN I2C3_MspDeInit 1 */
 
   /* USER CODE END I2C3_MspDeInit 1 */
+  }
+  else if(hi2c->Instance==I2C4)
+  {
+  /* USER CODE BEGIN I2C4_MspDeInit 0 */
+
+  /* USER CODE END I2C4_MspDeInit 0 */
+    /* Peripheral clock disable */
+    __HAL_RCC_I2C4_CLK_DISABLE();
+
+    /**I2C4 GPIO Configuration
+    PH12     ------> I2C4_SDA
+    PD12     ------> I2C4_SCL
+    */
+    HAL_GPIO_DeInit(GPIOH, GPIO_PIN_12);
+
+    HAL_GPIO_DeInit(GPIOD, GPIO_PIN_12);
+
+  /* USER CODE BEGIN I2C4_MspDeInit 1 */
+
+  /* USER CODE END I2C4_MspDeInit 1 */
   }
 
 }
@@ -346,6 +400,9 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* hltdc)
     GPIO_InitStruct.Alternate = GPIO_AF14_LTDC;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+    /* LTDC interrupt Init */
+    HAL_NVIC_SetPriority(LTDC_IRQn, 5, 0);
+    HAL_NVIC_EnableIRQ(LTDC_IRQn);
   /* USER CODE BEGIN LTDC_MspInit 1 */
 
   /* USER CODE END LTDC_MspInit 1 */
@@ -418,6 +475,8 @@ void HAL_LTDC_MspDeInit(LTDC_HandleTypeDef* hltdc)
 
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_8|GPIO_PIN_9);
 
+    /* LTDC interrupt DeInit */
+    HAL_NVIC_DisableIRQ(LTDC_IRQn);
   /* USER CODE BEGIN LTDC_MspDeInit 1 */
 
   /* USER CODE END LTDC_MspDeInit 1 */

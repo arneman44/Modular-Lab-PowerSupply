@@ -439,7 +439,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Controller.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -467,7 +467,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -480,7 +480,23 @@
     ],
     [
       "2ef29bc3-07d6-4b47-b3c8-f6aa65640783",
-      "LCD"
+      "LCD Connectors"
+    ],
+    [
+      "1442c032-6edc-48a9-af3c-a9192fc355af",
+      "Power"
+    ],
+    [
+      "4fbfa546-859a-4eb5-a8c7-b63244052f0f",
+      "SDRAM"
+    ],
+    [
+      "30c9b097-7479-44a0-b56e-5850c51415ac",
+      "NETWORK"
+    ],
+    [
+      "0ba641c1-b48f-450d-9fa4-c2f546c39bf5",
+      "CONNECTIONS"
     ]
   ],
   "text_variables": {}

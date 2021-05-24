@@ -196,6 +196,18 @@
     <Filter Include="Header Files\generated\gui_generated\screen3_screen">
       <UniqueIdentifier>F2735D99-E07A-A227-F24D-1E4F60ED248B</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\layoutselection_screen">
+      <UniqueIdentifier>EB6C8E31-AF1E-D145-1866-C7762266274E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\layoutselection_screen">
+      <UniqueIdentifier>7F520756-4A9A-4A2D-7A97-4977183D0AB2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\layoutselection_screen">
+      <UniqueIdentifier>B3C6B666-C6F8-02C8-81C2-F34FA8C66866</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\layoutselection_screen">
+      <UniqueIdentifier>CE5156B8-16E6-FEDC-6EAE-ACB00D324389</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -259,6 +271,21 @@
       <Filter>Source Files\gui\containers</Filter>
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\OneForthBase.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\layoutselection_screen\LayoutSelectionPresenter.cpp">
+      <Filter>Source Files\gui\layoutselection_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\layoutselection_screen\LayoutSelectionView.cpp">
+      <Filter>Source Files\gui\layoutselection_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\layoutselection_screen\LayoutSelectionViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\layoutselection_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\New.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\NewBase.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
     </ClCompile>
   </ItemGroup>
@@ -728,6 +755,21 @@
       <Filter>Header Files\gui\containers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\OneForthBase.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\layoutselection_screen\LayoutSelectionPresenter.hpp">
+      <Filter>Header Files\gui\layoutselection_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\layoutselection_screen\LayoutSelectionView.hpp">
+      <Filter>Header Files\gui\layoutselection_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\layoutselection_screen\LayoutSelectionViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\layoutselection_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\New.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\NewBase.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
     </ClInclude>
   </ItemGroup>

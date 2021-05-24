@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 1
 
 
    1              		.cpu arm7tdmi
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
   30:Core/Src/syscalls.c **** #include <time.h>
   31:Core/Src/syscalls.c **** #include <sys/time.h>
   32:Core/Src/syscalls.c **** #include <sys/times.h>
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 2
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 2
 
 
   33:Core/Src/syscalls.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
   64              		.align	1
   65              		.global	_kill
   66              		.syntax unified
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 3
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 3
 
 
   67              		.code	16
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  115              		.cfi_startproc
  116              		@ Function supports interworking.
  117              		@ Volatile: function does not return.
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 4
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 4
 
 
  118              		@ args = 0, pretend = 0, frame = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
   70:Core/Src/syscalls.c **** 	for (DataIdx = 0; DataIdx < len; DataIdx++)
  166              		.loc 1 70 2 view .LVU21
  167              	.LVL5:
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 5
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 5
 
 
  168              		.loc 1 70 15 is_stmt 0 view .LVU22
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  214              	_write:
  215              	.LVL13:
  216              	.LFB30:
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 6
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 6
 
 
   77:Core/Src/syscalls.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  259 0014 B442     		cmp	r4, r6
  260 0016 F7DB     		blt	.L11
   85:Core/Src/syscalls.c **** 	}
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 7
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 7
 
 
   86:Core/Src/syscalls.c **** 	return len;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  312              	.LFB32:
   93:Core/Src/syscalls.c **** 
   94:Core/Src/syscalls.c **** 
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 8
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 8
 
 
   95:Core/Src/syscalls.c **** int _fstat(int file, struct stat *st)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  359              	.LFE33:
  361              		.section	.text._lseek,"ax",%progbits
  362              		.align	1
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 9
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 9
 
 
  363              		.global	_lseek
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  410              		.loc 1 114 9 is_stmt 0 view .LVU74
  411 0002 0120     		movs	r0, #1
  412              	.LVL31:
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 10
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 10
 
 
  115:Core/Src/syscalls.c **** }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  463              		.global	_unlink
  464              		.syntax unified
  465              		.code	16
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 11
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 11
 
 
  466              		.thumb_func
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  514              		@ Function supports interworking.
  515              		@ args = 0, pretend = 0, frame = 0
  516              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 12
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 12
 
 
  517              		@ link register save eliminated.
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  566              		.thumb_func
  567              		.fpu softvfp
  569              	_link:
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 13
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 13
 
 
  570              	.LVL40:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  617              	.LCFI8:
  618              		.cfi_def_cfa_offset 8
  619              		.cfi_offset 4, -8
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 14
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 14
 
 
  620              		.cfi_offset 14, -4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  668              		.loc 1 155 9 is_stmt 0 view .LVU118
  669 000a 0120     		movs	r0, #1
  156:Core/Src/syscalls.c **** }
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 15
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 15
 
 
  670              		.loc 1 156 1 view .LVU119
@@ -871,51 +871,51 @@ ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 1
  702              		.file 7 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
  703              		.file 8 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
  704              		.file 9 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q4-major\\arm-none-eabi\\inc
-ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s 			page 16
+ARM GAS  C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 syscalls.c
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:24     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:35     .text.initialise_monitor_handles:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:40     .text._getpid:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:47     .text._getpid:00000000 _getpid
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:64     .text._kill:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:71     .text._kill:00000000 _kill
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:104    .text._exit:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:111    .text._exit:00000000 _exit
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:140    .text._read:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:147    .text._read:00000000 _read
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:207    .text._write:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:214    .text._write:00000000 _write
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:275    .text._close:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:282    .text._close:00000000 _close
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:303    .text._fstat:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:310    .text._fstat:00000000 _fstat
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:335    .text._isatty:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:342    .text._isatty:00000000 _isatty
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:362    .text._lseek:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:369    .text._lseek:00000000 _lseek
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:389    .text._open:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:396    .text._open:00000000 _open
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:422    .text._wait:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:429    .text._wait:00000000 _wait
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:462    .text._unlink:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:469    .text._unlink:00000000 _unlink
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:502    .text._times:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:509    .text._times:00000000 _times
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:530    .text._stat:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:537    .text._stat:00000000 _stat
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:562    .text._link:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:569    .text._link:00000000 _link
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:602    .text._fork:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:609    .text._fork:00000000 _fork
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:640    .text._execve:00000000 $t
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:647    .text._execve:00000000 _execve
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:691    .data.environ:00000000 environ
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:685    .bss.__env:00000000 __env
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:682    .bss.__env:00000000 $d
-C:\Users\arnem\AppData\Local\Temp\ccdQutzN.s:688    .data.environ:00000000 $d
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:24     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:35     .text.initialise_monitor_handles:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:40     .text._getpid:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:47     .text._getpid:00000000 _getpid
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:64     .text._kill:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:71     .text._kill:00000000 _kill
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:104    .text._exit:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:111    .text._exit:00000000 _exit
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:140    .text._read:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:147    .text._read:00000000 _read
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:207    .text._write:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:214    .text._write:00000000 _write
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:275    .text._close:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:282    .text._close:00000000 _close
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:303    .text._fstat:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:310    .text._fstat:00000000 _fstat
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:335    .text._isatty:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:342    .text._isatty:00000000 _isatty
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:362    .text._lseek:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:369    .text._lseek:00000000 _lseek
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:389    .text._open:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:396    .text._open:00000000 _open
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:422    .text._wait:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:429    .text._wait:00000000 _wait
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:462    .text._unlink:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:469    .text._unlink:00000000 _unlink
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:502    .text._times:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:509    .text._times:00000000 _times
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:530    .text._stat:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:537    .text._stat:00000000 _stat
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:562    .text._link:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:569    .text._link:00000000 _link
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:602    .text._fork:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:609    .text._fork:00000000 _fork
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:640    .text._execve:00000000 $t
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:647    .text._execve:00000000 _execve
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:691    .data.environ:00000000 environ
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:685    .bss.__env:00000000 __env
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:682    .bss.__env:00000000 $d
+C:\Users\arnem\AppData\Local\Temp\ccgmH6Hg.s:688    .data.environ:00000000 $d
 
 UNDEFINED SYMBOLS
 __errno

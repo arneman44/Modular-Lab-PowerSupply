@@ -32,6 +32,11 @@
     <ClCompile Include="..\..\generated\gui_generated\src\containers\HalfVertBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\OneForth.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\OneForthBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\layoutselection_screen\LayoutSelectionPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\layoutselection_screen\LayoutSelectionView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\layoutselection_screen\LayoutSelectionViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\New.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\NewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -191,6 +196,11 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\HalfVertBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\OneForth.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\OneForthBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\layoutselection_screen\LayoutSelectionPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\layoutselection_screen\LayoutSelectionView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\layoutselection_screen\LayoutSelectionViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\New.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\NewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

@@ -19,6 +19,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cmsis_os.h"
+#include "app_touchgfx.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -72,6 +74,7 @@ CRC_HandleTypeDef hcrc;
 DMA2D_HandleTypeDef hdma2d;
 
 I2C_HandleTypeDef hi2c3;
+I2C_HandleTypeDef hi2c4;
 
 LTDC_HandleTypeDef hltdc;
 
@@ -79,6 +82,20 @@ UART_HandleTypeDef huart1;
 
 SDRAM_HandleTypeDef hsdram1;
 
+/* Definitions for HardwareTask */
+osThreadId_t HardwareTaskHandle;
+const osThreadAttr_t HardwareTask_attributes = {
+  .name = "HardwareTask",
+  .stack_size = 512 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for TouchGFXTask */
+osThreadId_t TouchGFXTaskHandle;
+const osThreadAttr_t TouchGFXTask_attributes = {
+  .name = "TouchGFXTask",
+  .stack_size = 8192 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
 /* USER CODE BEGIN PV */
 
 
@@ -96,6 +113,10 @@ static void MX_DMA2D_Init(void);
 static void MX_CRC_Init(void);
 static void MX_I2C3_Init(void);
 static void MX_USART1_UART_Init(void);
+static void MX_I2C4_Init(void);
+void StartHardwareTask(void *argument);
+void StartGFXTask(void *argument);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -145,7 +166,7 @@ HAL_Delay(1000);
 HAL_UART_Transmit(&huart1, StartMSG, sizeof(StartMSG), 10000);
 for(i=1; i<128; i++)
 {
-	ret = HAL_I2C_IsDeviceReady(&hi2c3, (uint16_t)(i<<1), 3, 5);
+	ret = HAL_I2C_IsDeviceReady(&hi2c4, (uint16_t)(i<<1), 3, 5);
 	if (ret != HAL_OK) /* No ACK Received At That Address */
 	{
 	    HAL_UART_Transmit(&huart1, Space, sizeof(Space), 10000);
@@ -160,7 +181,6 @@ HAL_UART_Transmit(&huart1, EndMSG, sizeof(EndMSG), 10000);
 /*--[ Scanning Done ]--*/
 }
 
-
 /* USER CODE END 0 */
 
 /**
@@ -172,6 +192,9 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
+
+  /* Enable D-Cache---------------------------------------------------------*/
+  SCB_EnableDCache();
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -197,30 +220,73 @@ int main(void)
   MX_CRC_Init();
   MX_I2C3_Init();
   MX_USART1_UART_Init();
+  MX_I2C4_Init();
+  MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
 
   HAL_Delay(300);
   HAL_GPIO_WritePin(LCD_Baclight_GPIO_Port,LCD_Baclight_Pin,GPIO_PIN_SET);
-
+  //uint32_t* framebuffer = (uint32_t*)0xC0000000;
   //Clear LCD buffer
-  for(uint32_t i = 0;i < DisplayBufferLenght;i++){
-	 framebuffer[i] = 0;
-  }
-
-  twiScan();
+  //for(uint32_t i = 0;i < 160000;i++){
+  //	 framebuffer[i] = i;
+  //	HAL_Delay(1);
+  //}
+  HAL_Delay(1000);
+  //twiScan();
   uint16_t X,Y;
   uint8_t Pressure,Touch;
   /* USER CODE END 2 */
 
-  /* Infinite loop */s
+  /* Init scheduler */
+  osKernelInitialize();
+
+  /* USER CODE BEGIN RTOS_MUTEX */
+  /* add mutexes, ... */
+  /* USER CODE END RTOS_MUTEX */
+
+  /* USER CODE BEGIN RTOS_SEMAPHORES */
+  /* add semaphores, ... */
+  /* USER CODE END RTOS_SEMAPHORES */
+
+  /* USER CODE BEGIN RTOS_TIMERS */
+  /* start timers, add new ones, ... */
+  /* USER CODE END RTOS_TIMERS */
+
+  /* USER CODE BEGIN RTOS_QUEUES */
+  /* add queues, ... */
+
+  /* USER CODE END RTOS_QUEUES */
+
+  /* Create the thread(s) */
+  /* creation of HardwareTask */
+  HardwareTaskHandle = osThreadNew(StartHardwareTask, NULL, &HardwareTask_attributes);
+
+  /* creation of TouchGFXTask */
+  TouchGFXTaskHandle = osThreadNew(StartGFXTask, NULL, &TouchGFXTask_attributes);
+
+  /* USER CODE BEGIN RTOS_THREADS */
+  /* add threads, ... */
+  /* USER CODE END RTOS_THREADS */
+
+  /* USER CODE BEGIN RTOS_EVENTS */
+  /* add events, ... */
+  /* USER CODE END RTOS_EVENTS */
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
+  /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  GetTouchPoint(&hi2c3,0x38,1,&X,&Y,&Touch,&Pressure);
-  HAL_Delay(10);
+
+  //GetTouchPoint(&hi2c3,0x38,1,&X,&Y,&Touch,&Pressure);
+
   }
   /* USER CODE END 3 */
 }
@@ -278,15 +344,16 @@ void SystemClock_Config(void)
     Error_Handler();
   }
   PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LTDC|RCC_PERIPHCLK_USART1
-                              |RCC_PERIPHCLK_I2C3;
+                              |RCC_PERIPHCLK_I2C3|RCC_PERIPHCLK_I2C4;
   PeriphClkInitStruct.PLLSAI.PLLSAIN = 100;
-  PeriphClkInitStruct.PLLSAI.PLLSAIR = 2;
+  PeriphClkInitStruct.PLLSAI.PLLSAIR = 4;
   PeriphClkInitStruct.PLLSAI.PLLSAIQ = 2;
   PeriphClkInitStruct.PLLSAI.PLLSAIP = RCC_PLLSAIP_DIV2;
   PeriphClkInitStruct.PLLSAIDivQ = 1;
   PeriphClkInitStruct.PLLSAIDivR = RCC_PLLSAIDIVR_2;
   PeriphClkInitStruct.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
   PeriphClkInitStruct.I2c3ClockSelection = RCC_I2C3CLKSOURCE_PCLK1;
+  PeriphClkInitStruct.I2c4ClockSelection = RCC_I2C4CLKSOURCE_PCLK1;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -341,10 +408,10 @@ static void MX_DMA2D_Init(void)
   /* USER CODE END DMA2D_Init 1 */
   hdma2d.Instance = DMA2D;
   hdma2d.Init.Mode = DMA2D_M2M;
-  hdma2d.Init.ColorMode = DMA2D_OUTPUT_ARGB8888;
+  hdma2d.Init.ColorMode = DMA2D_OUTPUT_RGB565;
   hdma2d.Init.OutputOffset = 0;
   hdma2d.LayerCfg[1].InputOffset = 0;
-  hdma2d.LayerCfg[1].InputColorMode = DMA2D_INPUT_ARGB8888;
+  hdma2d.LayerCfg[1].InputColorMode = DMA2D_INPUT_RGB565;
   hdma2d.LayerCfg[1].AlphaMode = DMA2D_NO_MODIF_ALPHA;
   hdma2d.LayerCfg[1].InputAlpha = 0;
   if (HAL_DMA2D_Init(&hdma2d) != HAL_OK)
@@ -377,7 +444,7 @@ static void MX_I2C3_Init(void)
 
   /* USER CODE END I2C3_Init 1 */
   hi2c3.Instance = I2C3;
-  hi2c3.Init.Timing = 0x20404768;
+  hi2c3.Init.Timing = 0x00200D6F;
   hi2c3.Init.OwnAddress1 = 0;
   hi2c3.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c3.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
@@ -401,9 +468,58 @@ static void MX_I2C3_Init(void)
   {
     Error_Handler();
   }
+  /** I2C Enable Fast Mode Plus
+  */
+  HAL_I2CEx_EnableFastModePlus(I2C_FASTMODEPLUS_I2C3);
   /* USER CODE BEGIN I2C3_Init 2 */
 
   /* USER CODE END I2C3_Init 2 */
+
+}
+
+/**
+  * @brief I2C4 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C4_Init(void)
+{
+
+  /* USER CODE BEGIN I2C4_Init 0 */
+
+  /* USER CODE END I2C4_Init 0 */
+
+  /* USER CODE BEGIN I2C4_Init 1 */
+
+  /* USER CODE END I2C4_Init 1 */
+  hi2c4.Instance = I2C4;
+  hi2c4.Init.Timing = 0x20404768;
+  hi2c4.Init.OwnAddress1 = 0;
+  hi2c4.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c4.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c4.Init.OwnAddress2 = 0;
+  hi2c4.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c4.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c4.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c4, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c4, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C4_Init 2 */
+
+  /* USER CODE END I2C4_Init 2 */
 
 }
 
@@ -438,7 +554,7 @@ static void MX_LTDC_Init(void)
   hltdc.Init.TotalWidth = 1359;
   hltdc.Init.TotalHeigh = 642;
   hltdc.Init.Backcolor.Blue = 0;
-  hltdc.Init.Backcolor.Green = 255;
+  hltdc.Init.Backcolor.Green = 0;
   hltdc.Init.Backcolor.Red = 0;
   if (HAL_LTDC_Init(&hltdc) != HAL_OK)
   {
@@ -448,7 +564,7 @@ static void MX_LTDC_Init(void)
   pLayerCfg.WindowX1 = 1024;
   pLayerCfg.WindowY0 = 0;
   pLayerCfg.WindowY1 = 600;
-  pLayerCfg.PixelFormat = LTDC_PIXEL_FORMAT_RGB888;
+  pLayerCfg.PixelFormat = LTDC_PIXEL_FORMAT_RGB565;
   pLayerCfg.Alpha = 255;
   pLayerCfg.Alpha0 = 0;
   pLayerCfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_CA;
@@ -578,7 +694,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOI, LCD_SHLR_Pin|LCD_RESET_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LCD_DITHUB_GPIO_Port, LCD_DITHUB_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LCD_DITHUB_GPIO_Port, LCD_DITHUB_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LCD_CT_RESET_GPIO_Port, LCD_CT_RESET_Pin, GPIO_PIN_SET);
@@ -678,7 +794,6 @@ void MX_SDRAM_InitSeqeunce(uint32_t RefreshCount,uint32_t timout){
     tmpmrd = (uint32_t)SDRAM_MODEREG_BURST_LENGTH_1          |
 					   SDRAM_MODEREG_BURST_TYPE_SEQUENTIAL   |
 					   SDRAM_MODEREG_CAS_LATENCY_3           |
-					   SDRAM_MODEREG_OPERATING_MODE_STANDARD |
 					   SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
 
 	Command.CommandMode 			= FMC_SDRAM_CMD_LOAD_MODE;
@@ -691,6 +806,65 @@ void MX_SDRAM_InitSeqeunce(uint32_t RefreshCount,uint32_t timout){
 	HAL_SDRAM_ProgramRefreshRate(&hsdram1, RefreshCount);
 }
 /* USER CODE END 4 */
+
+/* USER CODE BEGIN Header_StartHardwareTask */
+/**
+  * @brief  Function implementing the HardwareTask thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_StartHardwareTask */
+void StartHardwareTask(void *argument)
+{
+  /* USER CODE BEGIN 5 */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(100);
+  }
+  /* USER CODE END 5 */
+}
+
+/* USER CODE BEGIN Header_StartGFXTask */
+/**
+* @brief Function implementing the TouchGFXTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartGFXTask */
+void StartGFXTask(void *argument)
+{
+  /* USER CODE BEGIN StartGFXTask */
+
+  MX_TouchGFX_Process();
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartGFXTask */
+}
+
+ /**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM6 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM6) {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.

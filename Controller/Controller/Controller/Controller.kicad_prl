@@ -63,7 +63,7 @@
       35,
       36
     ],
-    "visible_layers": "7fdf6fd_00000006",
+    "visible_layers": "7fdf6fd_80000007",
     "zone_display_mode": 0
   },
   "meta": {
@@ -74,26 +74,14 @@
     "files": [
       {
         "name": "Controller.kicad_sch",
-        "open": false,
+        "open": true,
         "window": {
           "display": 0,
-          "maximized": false,
-          "pos_x": 434,
-          "pos_y": 154,
-          "size_x": 1008,
-          "size_y": 872
-        }
-      },
-      {
-        "name": "Controller.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 4,
           "maximized": true,
-          "pos_x": 175,
-          "pos_y": -908,
-          "size_x": 1616,
-          "size_y": 876
+          "pos_x": -8,
+          "pos_y": -8,
+          "size_x": 1936,
+          "size_y": 1176
         }
       }
     ]
